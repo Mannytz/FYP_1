@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ApplicationDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Event Name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDetEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Event Name"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetOrgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Organiser Details"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDetEventOrgainser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Organiser Details"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetDateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dates"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDetEventDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dates"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvBriefDecTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brief Description"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDetBriefDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brief Description"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetFullTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Full Description"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDetFullDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Full Description"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetVenueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Venue Required"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDetEventVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Venue Required"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetLogoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Displayed Image/Logo"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivDetImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/tvReviewSestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Review"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:text="Is the event rejected or not? In the section below briefly comment on the reason for doing so(E.g. Reject. Venue occupied during proposed Dates-XXX venue available or change to XXX date.). If you accept, the applicant will proceed to pay and be granted the venue." />
+
+        <EditText
+            android:id="@+id/etDetComment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="top|left"
+            android:ems="10"
+            android:hint="Brief Comment"
+            android:layout_marginTop="2dp"
+            android:inputType="textMultiLine"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

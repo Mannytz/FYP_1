@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:id="@+id/hostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:layout_margin="16dp"
+        android:text="Welcome to the Hosting request screen. Browse through venues listed below and click for more details to book the venue"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_venue_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/hostTitle"
+        android:scrollbars="vertical"
+        android:layout_margin="16dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check application status"
+        android:layout_below="@+id/rv_venue_list"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnApplicationStatus"/>
+
+
+</RelativeLayout>

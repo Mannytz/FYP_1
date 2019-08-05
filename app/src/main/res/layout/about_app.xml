@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstCard"
+            app:cardCornerRadius="4dp"
+            android:elevation="5dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/aboutPageInfoPic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_info"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/aboutInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/aboutPageInfoPic"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:text="Get up to date information on Events (Exhibitions, Seminars, Workshops, Trainings) happening at the College of Information and Communication Technologies (CoICT)."
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            android:elevation="8dp"
+            android:layout_below="@+id/firstCard"
+            android:layout_marginTop="32dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/aboutPageVenuePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_placeholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutPageVenuePic"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:text="Looking to host at CoICT?? Click 'Apply to host an event' to browse through the different venues. Payment for the venues through the app is also possible"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

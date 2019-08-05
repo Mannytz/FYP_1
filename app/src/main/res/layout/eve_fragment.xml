@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTabLayoutEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/calendar"/>
+
+        <TextView
+            android:id="@+id/tvEventDates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Event starts on dd to dd"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/venue"/>
+
+        <TextView
+            android:id="@+id/tvEventVenue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Venue"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Organiser"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvOrganizerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of organiser"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnUserRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Register" />
+
+    
+</LinearLayout>

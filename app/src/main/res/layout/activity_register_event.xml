@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RegisterEventActivity">
+
+    <LinearLayout
+        android:id="@+id/event_reg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter name of event:" />
+
+        <EditText
+            android:id="@+id/etEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Event Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter name of organizer"/>
+
+
+        <EditText
+            android:id="@+id/etOrganizerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter organiser email" />
+
+        <EditText
+            android:id="@+id/etOrganizerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Describe your event in a few words(one sentence)" />
+
+        <EditText
+            android:id="@+id/etShortDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your event in detail (E.g. What it is?, who is eligible to participate, schedule, speakers, outline/modules)"/>
+
+        <EditText
+            android:id="@+id/etDetailedDesc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter start and end date for your event" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Start Date:" />
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="140dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="End  Date:" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="140dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick date" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click the button below to upload event picture/Logo" />
+
+        <ImageView
+            android:id="@+id/ivUploadedEventPic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnUploadEventImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="UPLOAD EVENT PICTURE/LOGO" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SUBMIT" />
+
+
+    </LinearLayout>
+
+</ScrollView>

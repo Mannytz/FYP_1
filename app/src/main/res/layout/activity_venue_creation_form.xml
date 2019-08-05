@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".VenueCreationFormActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Venue registration form"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Venue Name:"/>
+
+    <EditText
+        android:id="@+id/etVenueName"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Venue Capacity:"/>
+
+    <EditText
+        android:id="@+id/etVenueCapacity"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Venue Location:"/>
+
+    <EditText
+        android:id="@+id/etVenueLocation"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Block and Floor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Facilities avialable:"/>
+
+    <EditText
+        android:id="@+id/etVenueFacilities"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Click the button below to submit a picture of the venue"/>
+
+    <ImageView
+        android:id="@+id/ivVenuePic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnChooseVenueImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Choose Image"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnSubmitVenueDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

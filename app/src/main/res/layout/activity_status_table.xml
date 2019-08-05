@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusTable"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incase you have already requested to host an event, the status of your application should appear below"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_result_desc"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_table"
+        android:layout_below="@id/tv_result_desc"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*/*">
+
+        <View
+            android:layout_height="2dp"
+            android:background="#D3D3D3" />
+
+        <TableRow>
+
+            <TextView
+                android:text="Event Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:text="Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:text="Comments"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:text="Action"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#D3D3D3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tableRecyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_table"
+        android:text="Key"
+        android:id="@+id/key"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/statusColorRed"
+        android:background="@android:color/holo_red_dark"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_below="@+id/key"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/redKey"
+        android:text="Application not yet viewed"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/statusColorRed"
+        android:layout_below="@+id/key"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/statusColorGreen"
+        android:background="@android:color/holo_green_light"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_below="@+id/statusColorRed"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/greenKey"
+        android:text="Application viewed"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/statusColorGreen"
+        android:layout_below="@+id/redKey"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/statusButtonKey"
+        android:text="If your application has not yet been viewed button is disabled"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/statusColorGreen"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VenueActivity"
+    android:padding="16dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivVenuePicture"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvVenueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/ivVenuePicture"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVenueLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Location: "
+            android:layout_below="@+id/tvVenueName"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVenueCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Capacity:"
+            android:layout_below="@+id/tvVenueLocation"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVenueFacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Facilities available include:"
+            android:layout_below="@+id/tvVenueCapacity"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvVenueFacilitieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Facilities available include:"
+            android:layout_below="@+id/tvVenueFacilities"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnBookVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOK VENUE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvVenueFacilitieDetails"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"/>
+        
+    </RelativeLayout>
+
+</ScrollView>
